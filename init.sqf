@@ -9,8 +9,6 @@ enableSaving [false, false];
 //Perms
 debugEnabled = "debugEnabled" call BIS_fnc_getParamValue;
 
-nopop = true;
-
 // Call Init Files for both Server and Player 1st RRF Framework
 call compile preprocessFile "framework\fnc\compile.sqf";
 
