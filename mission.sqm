@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=296;
+		nextID=304;
 	};
 	class Camera
 	{
-		pos[]={7907.8906,118.15479,10244.584};
-		dir[]={0.86375499,-0.44491899,0.23711121};
-		up[]={0.42908531,0.89550608,0.1177888};
-		aside[]={0.26475039,-1.756729e-006,-0.96441734};
+		pos[]={7935.1055,87.005066,10236.815};
+		dir[]={0.087178171,-0.2676349,-0.95969737};
+		up[]={0.024218587,0.96345818,-0.26661503};
+		aside[]={-0.99599707,-7.5475691e-007,-0.090482034};
 	};
 };
 binarizationWanted=0;
@@ -829,7 +829,9 @@ randomSeed=7259387;
 class ScenarioData
 {
 	author="SSgtMuller";
+	respawnDialog=0;
 	disabledAI=1;
+	respawn=3;
 	wreckRemovalMaxTime=3600;
 };
 class CustomAttributes
@@ -866,7 +868,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="None";
+								value="Counter";
 							};
 						};
 					};
@@ -2277,9 +2279,9 @@ class Mission
 		forecastLightnings=0.1;
 		year=2017;
 		month=7;
-		day=15;
-		hour=19;
-		minute=-15;
+		day=27;
+		hour=18;
+		minute=-7;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -24699,7 +24701,6 @@ class Mission
 			};
 			id=946;
 			type="Fridge_01_closed_F";
-			atlOffset=0.00015068054;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24779,7 +24780,7 @@ class Mission
 			};
 			id=948;
 			type="Land_Microwave_01_F";
-			atlOffset=0.68709373;
+			atlOffset=0.68706894;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24820,7 +24821,6 @@ class Mission
 			};
 			id=949;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=0.00021362305;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61962,8 +61962,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -61972,10 +61972,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="AsianHead_A3_07";
 								};
 							};
 						};
@@ -62000,8 +62000,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -62010,10 +62010,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="AsianHead_A3_07";
+									value=0;
 								};
 							};
 						};
