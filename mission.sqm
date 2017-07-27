@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=304;
+		nextID=312;
 	};
 	class Camera
 	{
-		pos[]={7935.1055,87.005066,10236.815};
-		dir[]={0.087178171,-0.2676349,-0.95969737};
-		up[]={0.024218587,0.96345818,-0.26661503};
-		aside[]={-0.99599707,-7.5475691e-007,-0.090482034};
+		pos[]={7497.1553,335.50421,10071.941};
+		dir[]={0.93120676,-0.36190754,-0.046113282};
+		up[]={0.36152461,0.93214691,-0.017902575};
+		aside[]={-0.049456488,-7.5786011e-007,-0.99887806};
 	};
 };
 binarizationWanted=0;
@@ -3712,7 +3712,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=46;
 			type="Land_Medevac_HQ_V1_F";
@@ -61962,8 +61961,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -61972,10 +61971,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="AsianHead_A3_07";
+									value=0;
 								};
 							};
 						};
@@ -62000,8 +61999,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -62010,10 +62009,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="AsianHead_A3_07";
 								};
 							};
 						};
